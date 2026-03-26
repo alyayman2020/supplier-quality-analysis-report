@@ -1,84 +1,129 @@
-# Supplier Quality Analysis Project
+# 🏭 Supplier Quality Analysis — Supply Chain Performance Project
 
-This repository contains the final project for the **Data Analyst Specialist Track**, aimed at evaluating supplier quality and plant performance to enhance supply chain efficiency.
+> **Track:** Data Analyst Specialist Track  
+> **Objective:** Evaluate supplier quality and plant performance to drive supply chain efficiency through data-driven insights.
+
+---
+
+## 📌 Table of Contents
+
+- [Project Overview](#project-overview)
+- [Key Goals](#key-goals)
+- [Repository Structure](#repository-structure)
+- [Key Findings](#key-findings)
+- [Recommendations](#recommendations)
+- [How to Use](#how-to-use)
+- [Tech Stack](#tech-stack)
+- [Team](#team)
 
 ---
 
 ## 🚀 Project Overview
 
-The project addresses key aspects of supplier and plant performance:
+This project performs a comprehensive quality audit across suppliers, products, and manufacturing plants. The analysis pipeline covers:
 
-- **Data Cleaning**: Preparing raw supplier data for analysis.
-- **Exploratory Data Analysis (EDA)**: Identifying trends, correlations, and actionable insights.
-- **Visualization**: Interactive Tableau dashboard for clear and intuitive exploration.
-- **Reporting**: Delivering comprehensive findings and recommendations.
+| Phase | Description |
+|---|---|
+| **Data Cleaning** | Standardizing and preprocessing raw supplier quality data |
+| **EDA** | Uncovering defect trends, correlations, and performance outliers |
+| **Visualization** | Interactive Tableau dashboard for executive-level exploration |
+| **Reporting** | Actionable findings packaged into a comprehensive PDF report |
 
 ---
 
 ## 🎯 Key Goals
 
-1. **Identify** top-performing and underperforming suppliers.
-2. **Analyze** defect trends across products, plants, and suppliers.
-3. **Develop** data-driven strategies to optimize supply chain processes.
+1. **Identify** top-performing vs. underperforming suppliers based on defect rate benchmarks.
+2. **Analyze** defect and downtime patterns across products, plants, and supplier categories.
+3. **Develop** data-driven strategies to optimize supply chain quality control.
 
 ---
 
 ## 📁 Repository Structure
 
-- **📓 Notebook**: `Final Project - Python Notebook.ipynb`
-  - Data cleaning, preprocessing, and exploratory analysis.
-  - Visualizations and statistical analyses for defect and downtime metrics.
+```
+📦 supplier-quality-analysis/
+├── 📓 Final Project - Python Notebook.ipynb   # EDA, cleaning, statistical analysis
+├── 📊 Final Project - Dashboard.twbx          # Interactive Tableau dashboard
+└── 📄 Final Project - Report.pdf              # Full report with insights & recommendations
+```
 
-- **📊 Dashboard**: `Final Project - Dashboard.twbx`
-  - Interactive Tableau dashboard showcasing key findings.
+### File Descriptions
 
-- **📄 Report**: `Final Project - Report.pdf`
-  - Comprehensive report with insights and recommendations.
+- **`Python Notebook.ipynb`** — End-to-end data pipeline: cleaning, preprocessing, visualizations, and statistical analysis of defect rates and downtime metrics.
+- **`Dashboard.twbx`** — Tableau workbook with interactive filters for supplier, plant, category, and time period.
+- **`Report.pdf`** — Executive summary with methodology, findings, and strategic recommendations.
 
 ---
 
 ## 🔍 Key Findings
 
-- **Defect Trends**: Suppliers with defect rates >5% caused delays and increased costs.
-- **High-Risk Categories**: Mechanical and Packaging categories showed the highest defect rates.
-- **Plant Performance**: The Detroit plant had the highest defects, peaking in October.
-- **Seasonal Insights**: Defects spiked mid-year and in Q4 due to seasonal factors.
+| Finding | Detail |
+|---|---|
+| **High-Defect Suppliers** | Suppliers with defect rates >5% were primary drivers of delays and increased operational costs |
+| **High-Risk Categories** | **Mechanical** and **Packaging** categories exhibited the highest defect concentrations |
+| **Worst-Performing Plant** | **Detroit plant** recorded the highest defect volume, with a notable spike in **October** |
+| **Seasonal Patterns** | Defect rates surged **mid-year** and in **Q4**, correlated with seasonal demand fluctuations |
 
 ---
 
 ## ✅ Recommendations
 
-- **Prioritize top-performing suppliers** with defect rates <1%.
-- Implement stricter **quality control** for high-risk categories.
-- Address **plant-specific issues**, especially in Detroit.
-- Use **predictive analytics** to monitor supplier performance proactively.
+- **Supplier Prioritization** — Concentrate procurement on suppliers maintaining defect rates **< 1%**; phase out or audit high-defect vendors.
+- **Quality Control Protocols** — Implement stricter incoming inspection processes for **Mechanical** and **Packaging** categories.
+- **Plant-Level Intervention** — Conduct a root-cause analysis for the **Detroit plant**, targeting operational and process inefficiencies.
+- **Predictive Monitoring** — Deploy predictive analytics models to proactively flag at-risk suppliers before defect escalation.
 
 ---
 
 ## 🛠 How to Use
 
-1. **Jupyter Notebook**:
-   - Open the `Final Project - Python Notebook.ipynb` for data analysis.
-   - Requires: `Python 3`, `pandas`, `matplotlib`, `seaborn`.
+### 1. Jupyter Notebook
 
-2. **Tableau Dashboard**:
-   - Open the `Final Project - Dashboard.twbx` for interactive visualizations.
-   - Requires: [Tableau Reader](https://www.tableau.com/products/reader).
+```bash
+# Install dependencies
+pip install pandas matplotlib seaborn
 
-3. **PDF Report**:
-   - Review `Final Project - Report.pdf` for detailed analysis and strategic recommendations.
+# Launch notebook
+jupyter notebook "Final Project - Python Notebook.ipynb"
+```
+
+**Requirements:** Python 3, `pandas`, `matplotlib`, `seaborn`
+
+### 2. Tableau Dashboard
+
+- Open `Final Project - Dashboard.twbx` in **Tableau Desktop** or **[Tableau Reader](https://www.tableau.com/products/reader)** (free).
+- Use filters to drill down by supplier, plant, product category, or time period.
+
+### 3. PDF Report
+
+- Open `Final Project - Report.pdf` in any PDF viewer.
+- Contains full methodology, visualizations, and executive recommendations.
 
 ---
 
-## 👥 Authors & Acknowledgments
+## 🛠 Tech Stack
 
-- **Team Members**: Aly Ayman, Nrmeen Farag, Menna Mahmoud, Mina Fawzy.
-- **Mentor**: Eng. Yasser Abd ElRahman.
-
-### Tools Used:
-- **Programming**: Python (`pandas`, `matplotlib`, `seaborn`)
-- **Visualization**: Tableau
+| Tool | Purpose |
+|---|---|
+| **Python 3** | Data cleaning & statistical analysis |
+| **pandas** | Data manipulation |
+| **matplotlib / seaborn** | Exploratory visualizations |
+| **Tableau** | Interactive dashboard |
 
 ---
 
-Feel free to contribute or raise any issues! 🚀
+## 👥 Team
+
+| Name | Role |
+|---|---|
+| **Aly Ayman** | Team Member |
+| **Nrmeen Farag** | Team Member |
+| **Menna Mahmoud** | Team Member |
+| **Mina Fawzy** | Team Member |
+
+**Mentor:** Eng. Yasser Abd ElRahman
+
+---
+
+> 💡 *Found an issue or want to contribute? Feel free to open a pull request or raise an issue.*
